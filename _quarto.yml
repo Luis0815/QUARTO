@@ -1,0 +1,26 @@
+project:
+  type: website
+publish:
+  gh-pages:
+    branch: gh-pages
+
+ type: website
+
+website:
+  title: "Mi blog en cuarto"
+  navbar:
+    right:
+      - about.qmd
+      - icon: github
+        href: https://github.com/
+      - icon: twitter
+        href: https://twitter.com
+format:
+  html:
+    theme:
+      - cosmo
+      - brand
+    css: styles.css
+
+
+

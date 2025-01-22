@@ -1,0 +1,12 @@
+{
+  "hash": "e5e68bf5649348f3b937e0a2abbaaac3",
+  "result": {
+    "engine": "jupyter",
+    "markdown": "---\ntitle: \"Mi Primer Post en el Blog\"\ndate: 2025-01-20\n---\n\n\n# ¡Bienvenidos!\n\nEste es mi primer post en el blog utilizando Quarto. Aquí tienes un clasificador de ejemplo para datos de cáncer de mama.\n\n::: {#f6f51445 .cell execution_count=1}\n``` {.python .cell-code}\nimport urllib.request\n\ngist_url = \"https://shorturl.at/WZ8hR\"\n\ntry:\n   with urllib.request.urlopen(gist_url) as response:\n      script_content = response.read().decode('utf-8')\n   \n   print(\"Ejecutando el script...\")\n   exec(script_content)  # Ejecutar el script\nexcept Exception as e:\n   print(f\"Ocurrió un error: {e}\")\n```\n\n::: {.cell-output .cell-output-stdout}\n```\nOcurrió un error: HTTP Error 403: Forbidden\n```\n:::\n:::\n\n\n",
+    "supporting": [
+      "welcome_files"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}

